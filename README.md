@@ -34,7 +34,7 @@ This study investigates the instability of machine learning model performance wh
 
 ## LCI Data Information
 - `Flowinfo.xlsx` — Basic information for flow names.
-- `Processinfo.xlsx` — Basic information for process names.
+- `Processinfo.csv` — Basic information for process names.
 - `activity_overview_for_users_3.1_default.xlsx` — ISIC classification information.
 
 ## Data Availability
