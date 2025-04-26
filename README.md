@@ -42,8 +42,3 @@ This study investigates the instability of machine learning model performance wh
 ## Data Availability
 Due to licensing and data sharing restrictions, `rawdata.csv`(i.e. Ecoinvent raw data) and `USLCIdata.mat` cannot be made publicly available. Please contact the authors to request access to these files.
 
-## How to Cite
-If you use this code or data, please cite:
-
-> Zhao, B., Jiang, J., Xu, M., & Tu, Q. (2025). A data-centric investigation on the challenges of machine learning methods for bridging life cycle inventory data gaps. *Journal of Industrial Ecology*, 1–12. [DOI: 10.1111/jiec.70022](https://doi.org/10.1111/jiec.70022)
-
