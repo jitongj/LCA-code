@@ -116,7 +116,7 @@ end
 
 
 %% Create a bar graph of isic
-
+load('isic_20250307.mat')
 % Reset the color map to default
 colormap('default');
 
