@@ -25,13 +25,15 @@ This study investigates the instability of machine learning model performance wh
 - `testing.m` — Evaluates the model on an independent test set using the optimal (q, k) parameters from `data_training_small_range.mat` and visualizes the test performance.
 
 ### Performance Variability Analysis
+- `randomsplit_training.m`: Finds optimal parameters for 20 different train–test splits and records model performance (Figure 4a).
+- `randomsplit_testing.m`: Evaluates model performance on 50 random sub-test sets with fixed parameters (Figure 4b).
 - `figure4.R` — Creates two scatter plots to show how model performance varies under different train–test split randomness with 5% missing data. (Input files: `figure4a.csv` and `figure4b.csv`.)
 - `figure5.R` — Creates two scatter plots to visualize how model performance varies with flow frequency and value magnitude under 5% missing data. (Input files: `Frequency_5%_new.csv` and `5%missing_new.csv`.)
 
 ### U.S. LCI Database (USLCI) Analysis
 - `USLCIdata.m` — Prepares the USLCI dataset and generates `USLCIdata.mat` (not not publicly available; available upon request.).
 - `USLCI_performance.m` — Analyzes USLCI model performance and generates the heatmap for Supporting Information Figure S3.
-- 
+  
 ## LCI Data Information
 - `Flowinfo.xlsx` — Basic information for flow names.
 - `Processinfo.csv` — Basic information for process names.
