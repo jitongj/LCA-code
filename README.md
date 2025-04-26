@@ -29,16 +29,16 @@ This study investigates the instability of machine learning model performance wh
 - `figure5.R` — Creates two scatter plots to visualize how model performance varies with flow frequency and value magnitude under 5% missing data. (Input files: `Frequency_5%_new.csv` and `5%missing_new.csv`.)
 
 ### U.S. LCI Database (USLCI) Analysis
-- `USLCIdata.m` — Prepares the USLCI dataset and generates `USLCIdata.mat`.
+- `USLCIdata.m` — Prepares the USLCI dataset and generates `USLCIdata.mat` (not not publicly available; available upon request.).
 - `USLCI_performance.m` — Analyzes USLCI model performance and generates the heatmap for Supporting Information Figure S3.
-
+- 
 ## LCI Data Information
 - `Flowinfo.xlsx` — Basic information for flow names.
 - `Processinfo.csv` — Basic information for process names.
 - `activity_overview_for_users_3.1_default.xlsx` — ISIC classification information.
 
 ## Data Availability
-Due to licensing and data sharing restrictions, `rawdata.csv` cannot be made publicly available. Please contact the authors to request access to the file.
+Due to licensing and data sharing restrictions, `rawdata.csv`(i.e. Ecoinvent raw data) and USLCIdata.mat` cannot be made publicly available. Please contact the authors to request access to these files.
 
 ## How to Cite
 If you use this code or data, please cite:
