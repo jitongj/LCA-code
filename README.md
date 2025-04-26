@@ -11,34 +11,34 @@ This study investigates the instability of machine learning model performance wh
 ## Repository Structure
 
 ### Data Preparation and Visualization
-- **`flow_freq.m`** — Normalizes flow data, calculates the frequency of flow appearances across processes, and generates the bar plot for **Figure 1**.
-- **`flow_magnitude.m`** — Calculates the maximum magnitude for each flow, identifying top and bottom flows, and generates the plots for **Figure 3**.
-- **`flow_median.m`** — Computes the median of non-zero values for each flow and generates the bar plot for **Supporting Information Figure S2**.
-- **`isic.m`** — Matches processes to ISIC classifications and generates a bar plot showing the distribution across ISIC categories (**Figure 2**).
+- `flow_freq.m` — Normalizes flow data, calculates the frequency of flow appearances across processes, and generates the bar plot for Figure 1.
+- `flow_magnitude.m` — Calculates the maximum magnitude for each flow, identifying top and bottom flows, and generates the plots for Figure 3.
+- `flow_median.m` — Computes the median of non-zero values for each flow and generates the bar plot for Supporting Information Figure S2.
+- `isic.m` — Matches processes to ISIC classifications and generates a bar plot showing the distribution across ISIC categories (Figure 2).
 
 ### Parameter Tuning for Training Model
-- **`training_big_range.m`** — Performs a coarse grid search over a wide q range (0.001–10) and k range (1–20) to explore model performance, generating the heatmap for **Supporting Information Figure S1(a)**.
-- **`training_small_range.m`** — Conducts a fine-scale grid search within a narrow q range (0.065–0.085) and k range (1–5) to identify optimal parameters, generating the heatmap for **Supporting Information Figure S1(b)**.  
+- `training_big_range.m` — Performs a coarse grid search over a wide q range (0.001–10) and k range (1–20) to explore model performance, generating the heatmap for Supporting Information Figure S1(a).
+- `training_small_range.m` — Conducts a fine-scale grid search within a narrow q range (0.065–0.085) and k range (1–5) to identify optimal parameters, generating the heatmap for Supporting Information Figure S1(b).  
   After running, users should manually save the results as `data_training_small_range.mat` for later use (e.g., using the `save` function).
 
 ### Performance on Testing Model
-- **`testing.m`** — Evaluates the model on an independent test set using the optimal (q, k) parameters from `data_training_small_range.mat` and visualizes the test performance.
+- `testing.m` — Evaluates the model on an independent test set using the optimal (q, k) parameters from `data_training_small_range.mat` and visualizes the test performance.
 
 ### Performance Variability Analysis
-- **`figure4.R`** — Creates two scatter plots to show how model performance varies under different train–test split randomness with 5% missing data. (Input files: `figure4a.csv` and `figure4b.csv`.)
-- **`figure5.R`** — Creates two scatter plots to visualize how model performance varies with flow frequency and value magnitude under 5% missing data. (Input files: `Frequency_5%_new.csv` and `5%missing_new.csv`.)
+- `figure4.R` — Creates two scatter plots to show how model performance varies under different train–test split randomness with 5% missing data. (Input files: `figure4a.csv` and `figure4b.csv`.)
+- `figure5.R` — Creates two scatter plots to visualize how model performance varies with flow frequency and value magnitude under 5% missing data. (Input files: `Frequency_5%_new.csv` and `5%missing_new.csv`.)
 
 ### U.S. LCI Database (USLCI) Analysis
-- **`USLCIdata.m`** — Prepares the USLCI dataset and generates `USLCIdata.mat` in the `Data` folder.
-- **`USLCI_performance.m`** — Analyzes USLCI model performance and generates the heatmap for **Supporting Information Figure S3**.
+- `USLCIdata.m` — Prepares the USLCI dataset and generates `USLCIdata.mat`.
+- `USLCI_performance.m` — Analyzes USLCI model performance and generates the heatmap for Supporting Information Figure S3.
 
 ## LCI Data Information
-- **`Flowinfo.xlsx`** — Basic information for flow names.
-- **`Processinfo.xlsx`** — Basic information for process names.
+- `Flowinfo.xlsx` — Basic information for flow names.
+- `Processinfo.xlsx` — Basic information for process names.
+- `activity_overview_for_users_3.1_default.xlsx` — ISIC classification information.
 
 ## Data Availability
-Due to licensing and data sharing restrictions, some files (`rawdata.csv`, `data_training_big_range.mat`, `data_training_small_range.mat`, and `isic_data.mat`) cannot be made publicly available.  
-Please contact the authors to request access to these files.
+Due to licensing and data sharing restrictions, `rawdata.csv` cannot be made publicly available. Please contact the authors to request access to the file.
 
 ## How to Cite
 If you use this code or data, please cite:
