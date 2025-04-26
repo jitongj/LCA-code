@@ -40,7 +40,7 @@ This study investigates the instability of machine learning model performance wh
 - `activity_overview_for_users_3.1_default.xlsx` — ISIC classification information.
 
 ## Data Availability
-Due to licensing and data sharing restrictions, `rawdata.csv`(i.e. Ecoinvent raw data) and USLCIdata.mat` cannot be made publicly available. Please contact the authors to request access to these files.
+Due to licensing and data sharing restrictions, `rawdata.csv`(i.e. Ecoinvent raw data) and `USLCIdata.mat` cannot be made publicly available. Please contact the authors to request access to these files.
 
 ## How to Cite
 If you use this code or data, please cite:
